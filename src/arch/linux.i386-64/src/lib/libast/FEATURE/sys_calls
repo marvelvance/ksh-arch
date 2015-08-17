@@ -1,0 +1,10 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/sys_calls by iffe version 2013-11-14 : : */
+#ifndef _def_sys_calls_ast
+#define _def_sys_calls_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _lib_sysgetcwd	1	/* syscall(SYS_getcwd,buf,len) implemented */
+#include <sys/syscall.h>
+
+#define SYSGETCWD(a,b)		syscall(SYS_getcwd,a,b)
+
+#endif

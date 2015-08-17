@@ -1,0 +1,8 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/errno by iffe version 2013-11-14 : : */
+#ifndef _def_errno_ast
+#define _def_errno_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _dat_sys_nerr	1	/* sys_nerr in default libs */
+#define _def_errno_sys_nerr	1	/* sys_nerr declared in errno.h */
+#define _def_errno_sys_errlist	1	/* sys_errlist declared in errno.h */
+#endif

@@ -1,0 +1,11 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libcs/features/termios by iffe version 2013-11-14 : : */
+#ifndef _def_termios_cs
+#define _def_termios_cs	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _LIB_ast	1	/* -last is a library */
+#define _LIB_dl	1	/* -ldl is a library */
+#define _LIB_nsl	1	/* -lnsl is a library */
+#define _hdr_termios	1	/* #include <termios.h> ok */
+#define _lib_tcgetattr	1	/* tcgetattr() in default lib(s) */
+#define _lib_tcsetattr	1	/* tcsetattr() in default lib(s) */
+#endif

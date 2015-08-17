@@ -1,0 +1,5 @@
+# use { no NO } prefix to permanently disable #
+BIN=1
+noPLUGIN_LIB=cmd
+FPATH=../fun
+LD_LIBRARY_PATH=../lib

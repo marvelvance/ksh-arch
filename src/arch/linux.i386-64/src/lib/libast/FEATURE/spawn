@@ -1,0 +1,9 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/spawn by iffe version 2013-11-14 : : */
+#ifndef _def_spawn_ast
+#define _def_spawn_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _hdr_spawn	1	/* #include <spawn.h> ok */
+#define _hdr_unistd	1	/* #include <unistd.h> ok */
+#define _hdr_stdlib	1	/* #include <stdlib.h> ok */
+#define _lib_posix_spawn	1	/* posix_spawn exists and it works and its worth using */
+#endif

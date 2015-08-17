@@ -1,0 +1,71 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/cmd/ksh93/features/sigfeatures by iffe version 2013-11-14 : : */
+#ifndef _def_sigfeatures_ksh93
+#define _def_sigfeatures_ksh93	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _LIB_m	1	/* -lm is a library */
+#define _LIB_util	1	/* -lutil is a library */
+#define _LIB_cmd	1	/* -lcmd is a library */
+#define _LIB_ast	1	/* ../../../lib/libast.a is a library */
+#define _LIB_dl	1	/* -ldl is a library */
+#define _LIB_dll	1	/* -ldll is a library */
+#define _lib_sigblock	1	/* sigblock() in default lib(s) */
+#define _lib_sigrelse	1	/* sigrelse() in default lib(s) */
+#define _lib_sigsetmask	1	/* sigsetmask() in default lib(s) */
+#define _lib_sigprocmask	1	/* sigprocmask() in default lib(s) */
+#define _lib_sigqueue	1	/* sigqueue() in default lib(s) */
+#define _lib_sigaction	1	/* sigaction() in default lib(s) */
+#define _hdr_time	1	/* #include <time.h> ok */
+#define _sys_time	1	/* #include <sys/time.h> ok */
+#define _sys_times	1	/* #include <sys/times.h> ok */
+#define _hdr_stddef	1	/* #include <stddef.h> ok */
+#define _hdr_signal	1	/* #include <signal.h> ok */
+#define _typ_sigset_t	1	/* sigset_t is a type */
+#ifndef _lib_sigqueue
+#   define sigqueue(sig,action,val)	kill(sig,action)
+#endif
+#ifndef _mem_sigvec_sv_mask
+#   undef _lib_sigvec
+#endif
+#ifdef _lib_sigprocmask
+#    define sh_sigaction(s,action) do { sigset_t ss;\
+			sigemptyset(&ss); \
+			if(s) sigaddset(&ss,(s)); \
+			sigprocmask(action,&ss,0); \
+			}while(0)
+#    define sigrelease(s)	sh_sigaction(s,SIG_UNBLOCK)
+#    define sigblock(s)	 	sh_sigaction(s,SIG_BLOCK)
+#    define sig_begin()		sh_sigaction(0,SIG_SETMASK)
+#else
+#   ifndef _lib_sigblock
+#	define sigblock(s)
+#   endif
+#   ifdef _lib_sigsetmask
+#       define sigrelease(s)  sigsetmask(0)
+#       define sig_begin()    sigsetmask(0)
+#   else
+#	ifdef _lib_sigrelse
+#	    define sigrelease	sigrelse
+#	    define sig_begin()
+#	else
+#	    define sig_begin()		(0)
+#	    define sigrelease(s)	(0)
+#	endif /* _lib_sigrelse */
+#    endif /* _lib_sigsetmask */
+#endif /* _lib_sigprocmask */
+#ifndef CLD_EXITED
+#   define CLD_EXITED		1
+#   define CLD_KILLED		2
+#   define CLD_DUMPED		3
+#   define CLD_STOPPED		4
+#   define CLD_CONTINUED	5
+#endif
+#if _mem_si_value_sigval_int_siginfo_t
+#   define sival_int	sigval_int
+#   define sival_ptr	sigval_ptr
+#endif
+
+#undef	_SIGRTMIN
+#define _SIGRTMIN	34
+#undef	_SIGRTMAX
+#define _SIGRTMAX	64
+#endif

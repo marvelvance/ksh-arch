@@ -1,0 +1,22 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/cmd/ksh93/features/dynamic by iffe version 2013-11-14 : : */
+#ifndef _def_dynamic_ksh93
+#define _def_dynamic_ksh93	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _LIB_m	1	/* -lm is a library */
+#define _LIB_util	1	/* -lutil is a library */
+#define _LIB_cmd	1	/* -lcmd is a library */
+#define _LIB_ast	1	/* ../../../lib/libast.a is a library */
+#define _LIB_dl	1	/* -ldl is a library */
+#define _LIB_dll	1	/* -ldll is a library */
+#if SHOPT_DYNAMIC
+#include	<dlldefs.h>
+#endif
+#if !defined(SHOPT_FS_3D) && SHOPT_DYNAMIC
+#   define SHOPT_FS_3D	1
+#endif /* !SHOPT_FS_3D */
+#if SHOPT_FS_3D
+#   undef mount
+#   include	<fs3d.h>
+#endif /* SHOPT_FS_3D */
+
+#endif

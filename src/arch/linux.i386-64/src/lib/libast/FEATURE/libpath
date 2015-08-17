@@ -1,0 +1,6 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/libpath.sh by iffe version 2013-11-14 : : */
+#ifndef _def_libpath_ast
+#define _def_libpath_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define CONF_LIBPATH	"lib:LD_LIBRARY_PATH"
+#endif

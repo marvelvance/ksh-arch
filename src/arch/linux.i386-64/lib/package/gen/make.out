@@ -1,0 +1,116 @@
+CC=cc
+SHELL=/home/marvel/Downloads/ksh/src/arch/linux.i386-64/ok/bin/ksh
+HOSTTYPE=linux.i386-64
+NPROC=4
+PACKAGEROOT=/home/marvel/Downloads/ksh/src
+INSTALLROOT=/home/marvel/Downloads/ksh/src/arch/linux.i386-64
+PATH=/home/marvel/Downloads/ksh/src/arch/linux.i386-64/ok/bin:/home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin:/home/marvel/Downloads/ksh/src/bin:/home/marvel/.gem/ruby/2.2.0/bin:/home/marvel/.gem/ruby/2.2.0/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+cmd/INIT:
++ test ! -d /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin
++ test ! -d /home/marvel/Downloads/ksh/src/lib/package
++ test ! -d /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/make
++ test ! -x /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin/mkdir -a -x /bin/mkdir
++ mkdir -p
++ 2> /dev/null
++ :
++ test -d ./-p
++ test ! -d /home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast
++ test ! -d /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/lib
+lib/libast:
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/comp/hsearch.c
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/comp/tsearch.c
+cc1: note: obsolete option -I- used, please use -iquote instead
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtdisc.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtclose.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dthash.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtlist.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtmethod.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtopen.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtrehash.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtstat.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtstrhash.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dttree.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtuser.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtview.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -D_BLD_DLL -fPIC -D_BLD_ast -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/usr/include -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I- -I. -I. -I/home/marvel/Downloads/ksh/src/src/lib/libast/include -I/home/marvel/Downloads/ksh/src/src/lib/libast/comp -I/home/marvel/Downloads/ksh/src/src/lib/libast/std -I/home/marvel/Downloads/ksh/src/src/lib/libast/cdt -I/home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast -D_PACKAGE_ast -c /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/dtwalk.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ /usr/bin/ar r libast.a hsearch.o tsearch.o dtclose.o dtdisc.o dthash.o dtlist.o dtmethod.o dtopen.o dtrehash.o dtstat.o dtstrhash.o dttree.o dtuser.o dtview.o dtwalk.o
++ rm -f hsearch.o tsearch.o dtclose.o dtdisc.o dthash.o dtlist.o dtmethod.o dtopen.o dtrehash.o dtstat.o dtstrhash.o dttree.o dtuser.o dtview.o dtwalk.o
++ /usr/bin/cc -Wl,-O1,--sort-common,--as-needed,-z,relro -shared -nostartfiles -o libast.so.5.4 -Wl,-whole-archive libast.a -Wl,-no-whole-archive -lc
++ mv -f /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.a /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.a.old
++ ignore /bin/cp libast.a /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.a
++ /bin/mv /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so.5.4 /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.oo.5.4
++ /bin/cp libast.so.5.4 /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so.5.4
++ /bin/rm -f /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so
++ /bin/ln /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so.5.4 /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so
++ chmod -w /home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib/libast.so.5.4
++ proto -p -s -l /home/marvel/Downloads/ksh/src/lib/package/ast.lic '-o since=1985,author=gsf+dgk+kpv' /home/marvel/Downloads/ksh/src/src/lib/libast/cdt/cdtlib.h
++ 1> 1.1694917037.x
++ cmp -s /home/marvel/Downloads/ksh/src/arch/linux.i386-64/include/ast/cdtlib.h 1.1694917037.x
++ rm -f 1.1694917037.x
+lib/libsum:
+lib/libcmd:
+lib/libcoshell:
+lib/libcs:
+cmd/coshell:
+lib/libdll:
+cmd/ksh93:
++ cc -rdynamic -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o ksh pmain.o libshell.a ../../../lib/libdll.a -ldl ../../../lib/libcmd.a -lutil ../../../lib/libast.a -lm
++ cc -rdynamic -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o shcomp shcomp.o libshell.a ../../../lib/libdll.a -ldl ../../../lib/libcmd.a -lutil ../../../lib/libast.a -lm
++ cc -rdynamic -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o suid_exec suid_exec.o ../../../lib/libast.a
+cmd/ksh93/cc-O2,-D_BLD_DLL,-fPIC:
++ rm -f bash
++ ln ksh bash
+cmd/msggen:
++ /home/marvel/Downloads/ksh/src/arch/linux.i386-64/ok/bin/ksh -nc '[[ a || b ]] && : ${list[level]} $(( 1 + $x )) !(pattern)'
++ 2> /dev/null
++ grep '### .*archaic.* ###'
++ 1> /dev/null
++ /home/marvel/Downloads/ksh/src/arch/linux.i386-64/ok/bin/ksh -n /home/marvel/Downloads/ksh/src/src/cmd/msggen/msgadmin.sh
++ ENV=''
++ LC_ALL=C
+/home/marvel/Downloads/ksh/src/src/cmd/msggen/msgadmin.sh: warning: line 24: `...` obsolete, use $(...)
+/home/marvel/Downloads/ksh/src/src/cmd/msggen/msgadmin.sh: warning: line 166: variable expansion makes arithmetic evaluation less efficient
++ 1> msgadmin
++ 0< /home/marvel/Downloads/ksh/src/src/cmd/msggen/msgadmin.sh
++ read x
++ echo '########################################################################'
++ i='########################################################################'
++ cat - /home/marvel/Downloads/ksh/src/src/cmd/msggen/msgadmin.sh
++ 0<< \!
+USAGE_LICENSE="[-author?Glenn Fowler <glenn.s.fowler@gmail.com>][-copyright?Copyright (c) 2000-2015 AT&T Intellectual Property][-license?http://www.eclipse.org/org/documents/epl-v10.html][--catalog?msggen]"
+!
++ chmod u+w,+x msgadmin
++ cc -O2 -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I/usr/include -I- -I../../../include/ast -D_PACKAGE_ast '-DUSAGE_LICENSE="[-author?Glenn Fowler <glenn.s.fowler@gmail.com>][-copyright?Copyright (c) 2000-2015 AT&T Intellectual Property][-license?http://www.eclipse.org/org/documents/epl-v10.html][--catalog?msggen]"' -c /home/marvel/Downloads/ksh/src/src/cmd/msggen/msgcvt.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I/usr/include -I- -I../../../include/ast -D_PACKAGE_ast '-DUSAGE_LICENSE="[-author?Glenn Fowler <glenn.s.fowler@gmail.com>][-copyright?Copyright (c) 2000-2015 AT&T Intellectual Property][-license?http://www.eclipse.org/org/documents/epl-v10.html][--catalog?msggen]"' -c /home/marvel/Downloads/ksh/src/src/cmd/msggen/msggen.c
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -I/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include -I/usr/include -I- -I../../../include/ast -D_PACKAGE_ast '-DUSAGE_LICENSE="[-author?Glenn Fowler <glenn.s.fowler@gmail.com>][-copyright?Copyright (c) 2000-2015 AT&T Intellectual Property][-license?http://www.eclipse.org/org/documents/epl-v10.html][--catalog?msggen]"' -c /home/marvel/Downloads/ksh/src/src/cmd/msggen/msgget.c
++ ignore cp msgadmin /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin/msgadmin
+cc1: note: obsolete option -I- used, please use -iquote instead
++ cc -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -L/home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o msgget msgget.o -last
++ cc -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -L/home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o msggen msggen.o -last
++ cc -O2 -Wl,-O1,--sort-common,--as-needed,-z,relro -L/home/marvel/Downloads/ksh/src/arch/linux.i386-64/lib -Wl,-z,origin '-Wl,-R,$ORIGIN/../lib' -o msgcvt msgcvt.o -last
++ ignore cp msgcvt /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin/msgcvt
++ ignore cp msggen /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin/msggen
++ ignore cp msgget /home/marvel/Downloads/ksh/src/arch/linux.i386-64/bin/msgget
+lib:
+cmd/vcodexlib:
+cmd/paxlib:
+cmd/dsslib:
+cmd/codexlib:
+cmd:
+package: make done  at Mon Aug 17 20:29:28 EAT 2015 in /home/marvel/Downloads/ksh/src/arch/linux.i386-64

@@ -1,0 +1,6 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/options by iffe version 2013-11-14 : : */
+#ifndef _def_options_ast
+#define _def_options_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _opt_map_libc	1	/* map-libc is set in $PACKAGE_OPTIONS */
+#endif

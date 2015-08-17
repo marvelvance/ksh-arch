@@ -1,0 +1,14 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/uwin by iffe version 2013-11-14 : : */
+#ifndef _def_uwin_ast
+#define _def_uwin_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _lib_a64l	1	/* a64l() in default lib(s) */
+#define _lib_getpass	1	/* getpass() in default lib(s) */
+#define _lib_random	1	/* random() in default lib(s) */
+#define _lib_rcmd	1	/* rcmd() in default lib(s) */
+#define _lib_srand48	1	/* srand48() in default lib(s) */
+#define _lib_copysign	1	/* copysign() in default lib(s) */
+#define _lib_finite	1	/* finite() in default lib(s) */
+#define stricmp		strcasecmp
+
+#endif

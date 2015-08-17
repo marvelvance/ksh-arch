@@ -1,0 +1,83 @@
+# ;VERSION;--version;cc (GCC) 5.2.0;PATH;/usr/bin/cc
+CC.CC = /usr/bin/cc
+CC.NATIVE = /usr/bin/cc
+CC.EXECTYPE = linux.i386-64
+CC.HOSTTYPE = linux.i386-64
+CC.ALTPP.FLAGS =
+CC.ALTPP.ENV =
+CC.AR = /usr/bin/ar
+CC.AR.ARFLAGS =
+CC.ARFLAGS =
+CC.DEBUG = -g
+CC.DIALECT = ANSI DOTI GNU DYNAMIC -dD -I- -L EXPORT=ALL
+CC.DLLBIG = -D_BLD_DLL -fPIC
+CC.DLLSMALL = -D_BLD_DLL -fpic
+CC.DLL = -D_BLD_DLL -fPIC
+CC.DLL.DEF = -D_BLD_DLL
+CC.DLL.DIR = $(LIBDIR)
+CC.DLL.LIBRARIES = -lc
+CC.DLL.VARIANTS =
+CC.DYNAMIC = -dynamic
+CC.EXPORT.DYNAMIC = -rdynamic
+CC.INCLUDE.LOCAL = -I-
+if LDSHARED
+CC.LD = /usr/bin/ld
+else
+CC.LD = /usr/bin/cc
+end
+CC.LD.DYNAMIC =
+CC.LD.LAZY =
+CC.LD.NOLAZY =
+CC.LD.ORIGIN = -Wl,-z,origin -Wl,-R,\$ORIGIN/$(BINDIR:P=R=$(DLLDIR))
+CC.LD.RECORD =
+CC.LD.NORECORD =
+CC.LD.RUNPATH = -Wl,-R,
+CC.LD.STATIC =
+CC.LD.STRIP = -Wl,-s
+CC.LIB.DLL = option
+CC.LIB.ALL = -Wl,-whole-archive
+CC.LIB.UNDEF = -Wl,-no-whole-archive
+CC.MAKE.OPTIONS =
+CC.NM = /usr/bin/nm
+CC.NM.NMFLAGS =
+CC.NMEDIT = -e '/[ 	]T[ 	][ 	]*[_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]/!d' -e 's/.*[ 	]T[ 	][ 	]*//'
+CC.NMFLAGS =
+CC.NOPROTECT =
+CC.OPTIMIZE = -O2
+CC.PICBIG = -fPIC
+CC.PICSMALL = -fpic
+CC.PIC = -fPIC
+CC.READONLY =
+CC.REPOSITORY =
+CC.RUNPATH =
+CC.SHARED = -shared -nostartfiles
+CC.SHARED.LD = /usr/bin/cc
+CC.SHARED.NAME = -Wl,-soname=
+CC.SHARED.REGISTRY =
+CC.SHARED.REGISTRY.PATH = $(LIBDIR)/registry.ld
+CC.SHELLMAGIC =
+CC.SIZE = /usr/bin/size
+CC.STATIC = -static
+CC.STDINCLUDE = /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include /usr/local/include /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed /usr/include
+CC.STDLIB = /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0 /usr/local/lib /usr/lib
+CC.STRICT = -ansi -pedantic
+CC.STRIP = /usr/bin/strip
+CC.STRIP.FLAGS = -s
+CC.PREFIX.ARCHIVE = lib
+CC.PREFIX.DYNAMIC =
+CC.PREFIX.SHARED = lib
+CC.PREFIX.SYMBOL =
+CC.SUFFIX.ARCHIVE = .a
+CC.SUFFIX.COMMAND =
+CC.SUFFIX.DEBUG =
+CC.SUFFIX.DYNAMIC =
+CC.SUFFIX.LD = .ld
+CC.SUFFIX.OBJECT = .o
+CC.SUFFIX.SHARED = .so
+CC.SUFFIX.SOURCE = .c
+CC.SUFFIX.STATIC =
+CC.VERSION = --version
+CC.VERSION.STRING = cc (GCC) 5.2.0
+CC.WARN = -Wall
+CC.PREROOT =
+CC.UNIVERSE = ucb

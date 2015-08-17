@@ -1,0 +1,7 @@
+/* : : generated from /home/marvel/Downloads/ksh/src/src/lib/libast/features/sched by iffe version 2013-11-14 : : */
+#ifndef _def_sched_ast
+#define _def_sched_ast	1
+#define _sys_types	1	/* #include <sys/types.h> ok */
+#define _hdr_sched	1	/* #include <sched.h> ok */
+#define _lib_sched_yield	1	/* sched_yield() in default lib(s) */
+#endif
